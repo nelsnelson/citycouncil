@@ -12,6 +12,8 @@ $KCODE = 'u' if RUBY_VERSION < '1.9'
 #                            :expire_after => 2592000, # In seconds
 #                            :secret => SecureRandom.hex
 
+set :bind, '192.168.60.155'
+set :port, 80
 set :root, File.dirname(__FILE__) + '/app'
 set :public_folder, File.dirname(__FILE__) + '/public'
 set :markdown, :layout_engine => :maruku, :layout => false
