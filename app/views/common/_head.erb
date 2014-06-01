@@ -1,0 +1,26 @@
+<%# coding: UTF-8 %>
+<meta http-equiv="content-type" content="text/html; charset='UTF-8'"></meta>
+<script type="text/javascript" >
+var initialize = function() {
+}
+var pageHidden = function() {}
+var finalize   = function() {}
+
+if ('onpagehide' in window) {
+    window.addEventListener('pageshow', initialize, false);
+    window.addEventListener('pagehide', pageHidden, false);
+} else {
+    window.addEventListener('load', initialize, false);
+    window.addEventListener('unload', finalize, false);
+}
+
+</script>
+<link rel="stylesheet" media="screen, print" href="/css/default/default.css" type="text/css"></link>
+<link rel="stylesheet" media="screen, print" href="/css/common/nav.css" type="text/css"></link>
+<link rel="stylesheet" media="screen, print" href="/css/common/copyright.css" type="text/css"></link>
+<link rel="shortcut icon" href="/favicon.ico?v=3">
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript">
+window.addEventListener("load", function() { document.getElementsByClassName('preload')[0].removeAttribute('class'); }, false);
+</script>
